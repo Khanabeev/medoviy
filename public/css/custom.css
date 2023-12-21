@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/*NAVBAR*/
+@import url("assets/navbar.css");
+
+
+/*CALL TO ACTION*/
+@import url("assets/call-to-action.css");
+/*BUTTONS*/
+@import url("assets/buttons.css");
+
+/*TESTIMONIALS*/
+/*@import url("assets/testimonial.css");*/
+
+/*CUSTOM CSS*/
+ @font-face {
+    font-family: 'Montserrat'; /* Гарнитура шрифта */
+    src: url(../fonts/Montserrat-Regular.ttf),url(../fonts/Montserrat-Bold.ttf),url(../fonts/Montserrat-Italic.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url(../fonts/MontserratAlternates-Regular.ttf), url(../fonts/MontserratAlternates-Italic.ttf), url(../fonts/MontserratAlternates-Bold.ttf);
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.font-montserrat-alternates {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.shadowtext-lg {
+    text-shadow: 2px 2px 5px black!important;
+}
+.shadowtext-sm {
+    text-shadow: 1px 1px 4px black!important;
+}
+
+.link-feature:hover{
+	box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;
+	-webkit-transition: .5s;
+     -moz-transition: .5s;
+     -o-transition: .5s;
+     transition:.5s;
+}
+
+hr {
+border: 0;
+height: 1px;
+background: #000;
+background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+
+
+#main-content {
+
+}
+
+.myborder-bottom {
+	border-bottom: 1px solid #222222;
+
+}
+
+
+
+#myfooter {
+	background-color: beige;
+}
+
+
+#hero {
+	   background: url('../storage/images/carousel-bee2.jpg') 50% 0 repeat scroll;
+	background-size: cover;
+    height: 150px;
+
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+}
+ul.aside-menu li a{
+	margin: 5px 0;
+	display: block;
+	padding: 10px;
+	border-radius: 3px;
+}
+a.aside-link:hover{
+	background-color: #258fe9;
+
+	color: white;
+	transition: .5s;
+}
+
+
+
+.text-underline {
+	text-decoration: underline;
+}
+/*FANCYBOX STYLE*/
+.thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+.thumb img:hover {
+
+            -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+	transition: 1s;
+        }
+
+.thumb {
+            padding: 5px;
+        }
+p {
+	margin-top: 1em;
+}
+/*ОТОБРАЖЕНИЕ КОРЗИНЫ С ТОВАРАМИ*/
+.myCartCatalog {
+	position: fixed;
+	left: 20px;
+	top: 60px;
+	color: #222222;
+	border-radius: 50%;
+	padding: 10px;
+	background-color: rgba(59,106,255,0.50);
+	z-index: 999;
+
+}
+.myCartCatalog:hover{
+	color: palevioletred;
+	transition: 1s;
+	cursor: pointer;
+}
+/*Сама карта*/
+.card {
+	margin-bottom: 10px;
+	border: 2px solid #DFDFDF;
+}
+/*Положение опций цены в карточке*/
+.option-card {
+	display: block;
+	margin-top: 3px;
+	position: relative;
+
+}
+.option-card span{
+}
+.option-card button{
+	position: relative;
+	right: 0;
+
+}
+/*ОТОБРАЖЕНИЕ ЗАГОЛОВКА КАРТОЧКИ*/
+h5.card-title{
+		font-size: 1em;
+		text-align: center;
+	}
+/*Размер шрифта в сплывающем окне корзины*/
+.myCartTable {
+	font-size: .9em;
+}
+
+@media (max-width: 767px){
+	#myPrice {
+		font-size: 1em;
+	}
+
+}
+@media (max-width: 991px){
+	#myPrice {
+		font-size: .7em;
+	}
+	.aside-link{
+		font-size: .8em;
+	}
+	h5.card-title{
+		font-size: 1em;
+		text-align: center;
+	}
+}
+@media (max-width: 1199px){
+	h5.card-title{
+		font-size: 0.9em;
+		text-align: center;
+	}
+
+}
+
+
