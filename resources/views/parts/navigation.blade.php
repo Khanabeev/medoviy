@@ -30,6 +30,7 @@
                                 </ul>
                             </li>
                             <li><a href="/kontakti.html">Контакты</a></li>
+                            <li><a href="/reviews.html">Отзывы</a></li>
                         </ul>
                     </div>
                     <ul class="call order-2 order-lg-3">
