@@ -24,6 +24,8 @@ Route::get('/kontakti.html','HomeController@kontakti');
 Route::get('/narodnie-resepti.html', 'HomeController@narodnieResepti');
 Route::get('/nashi-dostijeniy.html', 'HomeController@nashiDostijeniy');
 Route::get('/praiys.html', 'HomeController@praiys');
+Route::get('/reviews.html','HomeController@reviews');
+Route::post('/reviews','HomeController@reviewStore')->name('review.store');
 
 
 // Пользовательский заказ
